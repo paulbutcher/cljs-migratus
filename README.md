@@ -30,7 +30,7 @@ Or (recommended) `migratus.clj`, allowing credentials to be taken from the envir
 
 ```
 {:store :database
- :db (get (System/getenv) "JDBC_DATABASE_URL")}
+ :db {:jdbcUrl (get (System/getenv) "JDBC_DATABASE_URL")}}
 ```
 
 Then run, for example:
